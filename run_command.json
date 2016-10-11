@@ -20,7 +20,7 @@
             "pip install -r requirements.txt",
             "python provision.py --image {{ imageType }}"
           ],
-          "workingDirectory":"/home/steve/adwords_scorer",
+          "workingDirectory":"/home/steve",
           "timeoutSeconds":"3600"
         }
       ]
