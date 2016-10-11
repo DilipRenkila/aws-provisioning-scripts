@@ -1,0 +1,7 @@
+2016-10-11 01:30:19,834 - Loading JSON file: /usr/local/lib/python2.7/dist-packages/boto3/data/ec2/2016-09-15/resources-1.json
+2016-10-11 01:30:19,858 - Skipping environment variable credential check because profile name was explicitly set.
+2016-10-11 01:30:19,859 - Looking for credentials via: env
+2016-10-11 01:30:19,859 - Looking for credentials via: assume-role
+2016-10-11 01:30:19,859 - Looking for credentials via: shared-credentials-file
+2016-10-11 01:30:19,859 - Found credentials in shared credentials file: ~/.aws/credentials
+2016-10-11 01:30:19,860 - Loading JSON file: /usr/local/lib/python2.7/dist-packages/botocore/data/endpoints.json

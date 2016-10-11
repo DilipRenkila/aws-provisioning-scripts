@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.2",
+  "description": "Provision and Run Adwords Scorer",
+  "parameters": {
+    "imageType": {
+      "type": "String",
+      "default": "c4.large",
+      "description": "(Required) Specify the image type of the instance to build",
+      "maxChars": 20
+    }
+  },
+  "runtimeConfig": {
+    "aws:runShellScript": {
+      "properties": [
+        {
+          "id": "0.aws:runShellScript",
+          "runCommand": [
+            "su -c \"git pull --rebase\" -s /bin/sh steve",
+            "apt install pip",
+            "pip install -r requirements.txt",
+            "python provision.py --image {{ imageType }}"
+          ],
+          "workingDirectory":"/home/steve/adwords_scorer",
+          "timeoutSeconds":"3600"
+        }
+      ]
+    }
+  }
+}

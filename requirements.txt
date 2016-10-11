@@ -1,0 +1,8 @@
+tqdm
+bitly_api
+boto3
+paramiko
+scp
+retrying
+slackweb
+cryptography
