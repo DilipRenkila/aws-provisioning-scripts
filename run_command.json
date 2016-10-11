@@ -15,8 +15,8 @@
         {
           "id": "0.aws:runShellScript",
           "runCommand": [
-            "su -c \"git pull --rebase\" -s /bin/sh steve",
-            "apt install pip",
+            "su -c \"apt install git pip\" -s /bin/sh steve",
+            "cd aws-provisioning-scripts"
             "pip install -r requirements.txt",
             "python provision.py --image {{ imageType }}"
           ],
